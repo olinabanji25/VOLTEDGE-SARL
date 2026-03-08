@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltedge SARL - Électricité professionnelle à Goma</title>
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style> 
+
+    /* ========== CENTRER LA TABLE DES COORDONNÉES ========== */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-info {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info h3 {
+    text-align: center;
+    width: 100%;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: left;  /* Texte aligné à gauche pour meilleure lisibilité */
+}
+
+.info-item i {
+    width: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.info-item p {
+    margin: 0;
+    flex: 1;
+}
+/* ========== CENTRER LA SECTION CONTACT ========== */
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.info-item {
+    justify-content: center;
+    text-align: center;
+}
+      /* ========== BOUTONS DE NAVIGATION ========== */
+.nav-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: transparent;
+    color: var(--blanc) !important;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid var(--jaune-electrique);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--jaune-electrique);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.nav-btn:hover {
+    color: var(--bg-principal) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(209, 189, 7, 0.4);
+}
+
+.nav-btn:hover::before {
+    left: 0;
+}
+
+.nav-btn::after {/* ========== BOUTONS DE NAVIGATION ========== */
+.nav-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: transparent;
+    color: var(--blanc) !important;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid var(--jaune-electrique);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--jaune-electrique);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.nav-btn:hover {
+    color: var(--bg-principal) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(216, 231, 10, 0.911);
+}
+
+.nav-btn:hover::before {
+    left: 0;
+}
+
+.nav-btn::after {
+    display: none; /* Supprime la ligne sous le bouton */
+}
+
+/* Style actif pour la page courante */
+.nav-btn.active {
+    background: var(--jaune-electrique);
+    color: var(--bg-principal) !important;
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 768px) {
+    .nav-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+    display: none; /* Supprime la ligne sous le bouton */
+}
+
+/* Style actif pour la page courante */
+.nav-btn.active {
+    background: var(--jaune-electrique);
+    color: var(--bg-principal) !important;
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 768px) {
+    .nav-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+        /* ========== BOUTON DÉVELOPPEUR ========== */
+.developer-section {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.developer-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #25D366, #069c81);
+    color: rgb(255, 254, 254);
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+.developer-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+    background: linear-gradient(135deg, #128C7E, #25D366);
+}
+
+.developer-btn i {
+    font-size: 1.3rem;
+    animation: pulse 2s infinite;
+}
+
+/* Animation pour l'icône WhatsApp */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+        /* Couleurs spécifiques pour chaque bouton de contact */
+.modal-btn.gmail {
+    background: rgba(234, 67, 53, 0.2);
+    border-color: #EA4335;
+}
+
+.modal-btn.gmail:hover {
+    background: rgba(234, 67, 53, 0.4);
+}
+
+.modal-btn.yahoo {
+    background: rgba(96, 1, 210, 0.2);
+    border-color: #6001D2;
+}
+
+.modal-btn.yahoo:hover {
+    background: rgba(96, 1, 210, 0.4);
+}
+
+.modal-btn.facebook {
+    background: rgba(24, 119, 242, 0.2);
+    border-color: #1877F2;
+}
+
+.modal-btn.facebook:hover {
+    background: rgba(24, 119, 242, 0.4);
+}
+
+.modal-btn.whatsapp {
+    background: rgba(37, 211, 102, 0.2);
+    border-color: #25D366;
+}
+
+.modal-btn.whatsapp:hover {
+    background: rgba(37, 211, 102, 0.4);
+}
+        /* ========== VARIABLES ========== */
+        :root {
+            --jaune-electrique: #FFD700;
+            --blanc: #FFFFFF;
+            --bg-principal: #0a0a0a;
+            --bg-secondaire: #1a1a1a;
+            --texte-clair: #ffffff;
+            --ombre: 0 5px 15px rgba(0,0,0,0.5);
+            --transition: all 0.3s ease;
+        }
+
+        /* ========== RESET & BASE ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--texte-clair);
+            background-color: var(--bg-principal);
+            overflow-x: hidden;
+            background-image: linear-gradient(135deg, rgba(0,0,0,0.85), rgba(0,0,0,0.7)), url('accueil/WhatsApp Image 2026-03-05 at 19.10.35.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========== BARRE DE NAVIGATION ========== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: var(--transition);
+            background: rgba(10, 10, 10, 0.2);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+        }
+
+        .navbar.scrolled {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(15px);
+            box-shadow: var(--ombre);
+        }
+
+        .logo {
+            color: var(--blanc);
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--jaune-electrique);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--blanc);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: var(--jaune-electrique);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--jaune-electrique);
+            transition: var(--transition);
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            color: var(--blanc);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* ========== MODAL DE CONTACT ========== */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal.active {
+            display: flex;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: rgba(20, 20, 20, 0.3);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-content h3 {
+            color: var(--jaune-electrique);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .modal-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .modal-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--blanc);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .modal-btn:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 215, 0, 0.2);
+            border-color: var(--jaune-electrique);
+        }
+
+        .modal-btn i {
+            font-size: 1.3rem;
+        }
+
+        .close-modal {
+            margin-top: 1.5rem;
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: var(--blanc);
+            padding: 0.5rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .close-modal:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--jaune-electrique);
+        }
+
+        .contact-coordonnees {
+            text-align: left;
+            padding: 1rem;
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+
+        .contact-coordonnees h4 {
+            color: var(--jaune-electrique);
+            margin: 1rem 0 0.5rem;
+        }
+
+        .contact-coordonnees h4:first-of-type {
+            margin-top: 0;
+        }
+
+        /* ========== SECTIONS COMMUNES ========== */
+        section {
+            padding: 5rem 5%;
+            background: rgba(20, 20, 20, 0.45);
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--jaune-electrique);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--jaune-electrique);
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--blanc);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 span {
+            color: var(--jaune-electrique);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: var(--jaune-electrique);
+            color: var(--bg-principal);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255,215,0,0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--blanc);
+            border: 2px solid var(--jaune-electrique);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--jaune-electrique);
+            color: var(--bg-principal);
+            transform: translateY(-3px);
+        }
+
+        /* ========== SERVICES ========== */
+        .services {
+            background-color: var(--bg-secondaire);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--ombre);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 215, 0, 0.1);
+            border-color: var(--jaune-electrique);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: var(--jaune-electrique);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--jaune-electrique);
+            margin-bottom: 1rem;
+        }
+
+        /* ========== POURQUOI NOUS CHOISIR ========== */
+        .why-us {
+            background: linear-gradient(135deg, var(--bg-principal), var(--bg-secondaire));
+        }
+
+        .why-us-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .why-us-text {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-item {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .feature-item:hover {
+            transform: scale(1.05);
+            background: rgba(255, 215, 0, 0.1);
+            border-color: var(--jaune-electrique);
+        }
+
+        .feature-item i {
+            font-size: 2.5rem;
+            color: var(--jaune-electrique);
+            margin-bottom: 1rem;
+        }
+
+        .feature-item h3 {
+            margin-bottom: 0.5rem;
+            color: var(--jaune-electrique);
+        }
+
+        /* ========== GALERIE PHOTOS ========== */
+        .photos {
+            background-color: var(--bg-principal);
+        }
+
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-thumb {
+            width: 6cm;
+            height: 6cm;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: var(--ombre);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .gallery-thumb:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 3px var(--jaune-electrique);
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90vw;
+            max-height: 80vh;
+            border-radius: 15px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            color: #fff;
+            font-size: 3rem;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .lightbox-close:hover {
+            color: var(--jaune-electrique);
+        }
+
+        /* ========== À PROPOS ========== */
+        .about {
+            background-color: var(--bg-principal);
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .certifications {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .certification-item {
+            text-align: center;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .certification-item i {
+            color: var(--jaune-electrique);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ========== CONTACT ========== */
+        .contact {
+            background-color: var(--bg-principal);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        .contact-info h3 {
+            color: var(--jaune-electrique);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--jaune-electrique);
+            width: 30px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 0.5rem;
+            color: var(--jaune-electrique);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 0.8rem;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 5px;
+            font-family: inherit;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--texte-clair);
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--jaune-electrique);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        .form-message {
+            color: #28a745;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.5rem;
+            background: rgba(40, 167, 69, 0.1);
+            border-radius: 5px;
+            display: none;
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            color: var(--blanc);
+            padding: 3rem 5% 1rem;
+            border-top: 1px solid rgba(255, 215, 0, 0.1);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section h3 {
+            color: var(--jaune-electrique);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: var(--blanc);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-section a:hover {
+            color: var(--jaune-electrique);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 215, 0, 0.1);
+        }
+
+        /* ========== BOUTON WHATSAPP FLOTTANT ========== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: rgba(37, 211, 102, 0.9);
+            color: var(--blanc);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            line-height: 60px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background: rgba(37, 211, 102, 1);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: rgba(10, 10, 10, 0.95);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem;
+                transition: left 0.3s ease;
+                gap: 1rem;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .nav-menu a {
+                display: block;
+                padding: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .gallery-thumb {
+                width: 4cm;
+                height: 4cm;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+                text-align: center;
+            }
+            
+            .gallery-thumb {
+                width: 3cm;
+                height: 3cm;
+            }
+            
+            .lightbox-close {
+                top: 20px;
+                right: 20px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- BARRE DE NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="logo/WhatsApp Image 2026-03-04 at 19.18.04.jpeg" alt="Logo Voltedge" style="height:40px;vertical-align:middle;margin-right:10px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+            VOLTEDGE<span> SARL</span>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+    <li><a href="#accueil" class="nav-btn">Accueil</a></li>
+    <li><a href="#apropos" class="nav-btn">À propos</a></li>
+    <li><a href="#services" class="nav-btn">Services</a></li>
+    <li><a href="#pourquoi" class="nav-btn">Pourquoi nous choisir</a></li>
+    <li><a href="#contact" class="nav-btn">Contact</a></li>
+    <li><a href="#photos" class="nav-btn">Photos</a></li>
+</ul>
+
+    </nav>
+
+   <!-- MODAL DE CONTACT -->
+<div class="modal" id="contactModal">
+    <div class="modal-content">
+        <h3>Contactez-nous</h3>
+        <div class="modal-buttons">
+            <!-- Gmail -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@voltedgesarl.cd" target="_blank" class="modal-btn gmail">
+                <i class="fab fa-google"></i> Gmail
+            </a>
+            
+            <!-- Yahoo -->
+            <a href="https://compose.mail.yahoo.com/?to=Voltedge@yahoo.fr" target="_blank" class="modal-btn yahoo">
+                <i class="fab fa-yahoo"></i> Yahoo
+            </a>
+            
+            <!-- Facebook -->
+            <a href="https://facebook.com/olinabanjijeph" target="_blank" class="modal-btn facebook">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/243971684673" target="_blank" class="modal-btn whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp : +243 971684673
+            </a>
+        </div>
+        
+        <!-- Coordonnées -->
+        <div class="contact-coordonnees" style="margin-top:20px;">
+            <h4>Coordonnées</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Goma – Nord-Kivu – RDC</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+243971684673">+243 97 168 46 73</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:contact@voltedgesarl.cd">contact@voltedgesarl.cd</a></p>
+            <h4>Horaires</h4>
+            <p>LUN-VEN : 8h00-18h00</p>
+            <p>SAM : 9h00-13h00</p>
+        </div>
+        
+        <button class="close-modal" id="closeModal">Fermer</button>
+    </div>
+</div>
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil" class="hero">
+        <div class="hero-content fade-in">
+            <h1>VOLTEDGE <span>SARL</span></h1>
+            <p>"L'innovation au cœur de vos installations"</p>
+            <div class="btn-group">
+                <a href="#contact" class="btn btn-primary">Demander un devis</a>
+                <button class="btn btn-secondary" id="contactBtn">Nous contacter</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION SERVICES -->
+    <section id="services" class="services fade-in">
+        <h2 class="section-title">Nos Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Installation électrique</h3>
+                <p>Installation complète pour bâtiments résidentiels, entreprises et industries, respectant les normes de sécurité les plus strictes.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Maintenance et dépannage</h3>
+                <p>Intervention rapide pour tous vos problèmes électriques, maintenance préventive et corrective 24h/24.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Mise en conformité</h3>
+                <p>Sécurisation et mise aux normes de vos installations électriques existantes pour garantir votre sécurité.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Câblage réseau</h3>
+                <p>Installation de réseaux informatiques structurés, câblage fibre optique et solutions de connectivité.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-solar-panel"></i>
+                <h3>Optimisation énergétique</h3>
+                <p>Solutions d'économie d'énergie, installation de panneaux solaires et systèmes de gestion intelligente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION POURQUOI NOUS CHOISIR -->
+    <section id="pourquoi" class="why-us fade-in">
+        <h2 class="section-title">Pourquoi nous choisir ?</h2>
+        <div class="why-us-content">
+            <p class="why-us-text">Choisir Voltedge SARL, c'est opter pour la fiabilité, la performance et un partenaire de confiance pour tous vos projets électriques et réseaux.</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>5 ans d'expérience</h3>
+                    <p>Une expertise éprouvée dans le domaine</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Équipe qualifiée</h3>
+                    <p>Techniciens certifiés et formés</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Normes de sécurité</h3>
+                    <p>Respect strict des standards</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Intervention rapide</h3>
+                    <p>Disponibilité et réactivité</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-smile"></i>
+                    <h3>Satisfaction client</h3>
+                    <p>Garantie de qualité</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PHOTOS -->
+    <section id="photos" class="photos fade-in">
+        <h2 class="section-title">Galerie Photos</h2>
+        <div class="gallery-grid">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.28.jpeg" alt="Photo 1" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.30.jpeg" alt="Photo 2" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.36.jpeg" alt="Photo 3" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.37.jpeg" alt="Photo 4" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.40.jpeg" alt="Photo 5" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.41.jpeg" alt="Photo 6" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.42.jpeg" alt="Photo 7" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.43.jpeg" alt="Photo 8" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.45.jpeg" alt="Photo 9" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.48.jpeg" alt="Photo 10" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.50.jpeg" alt="Photo 11" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-04 at 19.35.52.jpeg" alt="Photo 12" class="gallery-thumb" onclick="openLightbox(this.src)">
+            <img src="photo accueil/WhatsApp Image 2026-03-05 at 14.26.17.jpeg" alt="Photo 14" class="gallery-thumb" onclick="openLightbox(this.src)">
+        </div>
+        
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" src="" alt="Aperçu">
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section id="apropos" class="about fade-in">
+        <h2 class="section-title">À propos de nous</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Voltedge SARL est une entreprise spécialisée en électricité générale et en solutions de réseaux électriques et informatiques. Nous accompagnons les particuliers, les entreprises et les institutions dans la conception, l'installation, la maintenance et l'optimisation de leurs infrastructures électriques et systèmes de connexion.</p>
+                
+                <p>Grâce à une équipe qualifiée et engagée, Voltedge SARL met un point d'honneur à offrir des prestations fiables, sécurisées et conformes aux normes en vigueur. Nous intervenons aussi bien sur des projets résidentiels que professionnels, en garantissant qualité, efficacité et respect des délais.</p>
+                
+                <p>Notre vision est de faire de Voltedge SARL un acteur incontournable des solutions électriques et réseaux, en alliant sécurité, innovation et performance au service des entreprises et des particuliers.</p>
+            </div>
+            <div class="certifications">
+                <div class="certification-item">
+                    <i class="fas fa-award"></i>
+                    <h3>5 ans d'expérience</h3>
+                </div>
+                <div class="certification-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certifications professionnelles</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <!-- SECTION CONTACT -->
+<section id="contact" class="contact fade-in">
+    <h2 class="section-title">Contactez-nous</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Nos coordonnées</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Goma – Nord-Kivu – République Démocratique du Congo</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+243 97 168 46 73</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>contact@voltedgesarl.cd<br>Voltedge@yahoo.fr</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <p>LUN-VEN: 8h00 – 18h00<br>SAM: 9h00 – 13h00</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>VOLTEDGE SARL</h3>
+            <p>Votre partenaire de confiance en solutions électriques et réseaux</p>
+        </div>
+        <div class="footer-section">
+            <h3>Liens rapides</h3>
+            <p><a href="#accueil">Accueil</a></p>
+            <p><a href="#apropos">À propos</a></p>
+            <p><a href="#services">Services</a></p>
+            <p><a href="#pourquoi">Pourquoi nous choisir</a></p>
+            <p><a href="#photos">Photos</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Goma – Nord-Kivu – RDC</p>
+            <p><i class="fas fa-phone"></i> +243 97 168 46 73</p>
+            <p><i class="fas fa-envelope"></i> contact@voltedgesarl.cd</p>
+        </div>
+        <div class="footer-section">
+            <h3>Horaires</h3>
+            <p>LUN-VEN: 8h00 – 18h00</p>
+            <p>SAM: 9h00 – 13h00</p>
+        </div>
+    </div>
+    
+    <!-- Bouton Développeur avec WhatsApp -->
+    <div class="developer-section">
+        <a href="https://wa.me/243850015819" target="_blank" class="developer-btn">
+            <i class="fab fa-whatsapp"></i> jeph Développeur 
+        </a>
+    </div>
+</footer>
+    <!-- BOUTON WHATSAPP FLOTTANT -->
+    <a href="https://wa.me/243971684673" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // ========== LIGHTBOX POUR LA GALERIE PHOTO ==========
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        // Fermer la lightbox avec la touche Echap
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // ========== MENU MOBILE ==========
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                if (icon.classList.contains('fa-bars')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Fermer le menu quand on clique sur un lien
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+        }
+
+        // ========== MODAL DE CONTACT ==========
+        const modal = document.getElementById('contactModal');
+        const contactBtn = document.getElementById('contactBtn');
+        const closeModal = document.getElementById('closeModal');
+
+        if (modal && contactBtn && closeModal) {
+            contactBtn.addEventListener('click', () => {
+                modal.classList.add('active');
+            });
+
+            closeModal.addEventListener('click', () => {
+                modal.classList.remove('active');
+            });
+
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                }
+            });
+        }
+
+        // ========== ANIMATION AU SCROLL ==========
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        function checkFade() {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementBottom = element.getBoundingClientRect().bottom;
+                const windowHeight = window.innerHeight;
+
+                if (elementTop < windowHeight - 100 && elementBottom > 0) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkFade);
+        window.addEventListener('load', checkFade);
+
+
+        // ========== EFFET DE SCROLL SUR LA NAVBAR ==========
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
