@@ -6,261 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voltedge SARL - Électricité professionnelle à Goma</title>
-    <!-- Font Awesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style> 
-
-    /* ========== CENTRER LA TABLE DES COORDONNÉES ========== */
-.contact-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.contact-info {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-info h3 {
-    text-align: center;
-    width: 100%;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
-    max-width: 500px;
-    margin: 10px auto;
-    text-align: left;  /* Texte aligné à gauche pour meilleure lisibilité */
-}
-
-.info-item i {
-    width: 30px;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.info-item p {
-    margin: 0;
-    flex: 1;
-}
-/* ========== CENTRER LA SECTION CONTACT ========== */
-.contact-container {
-    display: flex;
-    justify-content: center;
-}
-
-.contact-info {
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
-}
-
-.info-item {
-    justify-content: center;
-    text-align: center;
-}
-      /* ========== BOUTONS DE NAVIGATION ========== */
-.nav-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: transparent;
-    color: var(--blanc) !important;
-    text-decoration: none;
-    font-weight: 600;
-    border: 2px solid var(--jaune-electrique);
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.nav-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: var(--jaune-electrique);
-    transition: all 0.3s ease;
-    z-index: -1;
-}
-
-.nav-btn:hover {
-    color: var(--bg-principal) !important;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(209, 189, 7, 0.4);
-}
-
-.nav-btn:hover::before {
-    left: 0;
-}
-
-.nav-btn::after {/* ========== BOUTONS DE NAVIGATION ========== */
-.nav-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: transparent;
-    color: var(--blanc) !important;
-    text-decoration: none;
-    font-weight: 600;
-    border: 2px solid var(--jaune-electrique);
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.nav-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: var(--jaune-electrique);
-    transition: all 0.3s ease;
-    z-index: -1;
-}
-
-.nav-btn:hover {
-    color: var(--bg-principal) !important;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(216, 231, 10, 0.911);
-}
-
-.nav-btn:hover::before {
-    left: 0;
-}
-
-.nav-btn::after {
-    display: none; /* Supprime la ligne sous le bouton */
-}
-
-/* Style actif pour la page courante */
-.nav-btn.active {
-    background: var(--jaune-electrique);
-    color: var(--bg-principal) !important;
-}
-
-/* Ajustement pour mobile */
-@media (max-width: 768px) {
-    .nav-btn {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin: 5px 0;
-    }
-}
-    display: none; /* Supprime la ligne sous le bouton */
-}
-
-/* Style actif pour la page courante */
-.nav-btn.active {
-    background: var(--jaune-electrique);
-    color: var(--bg-principal) !important;
-}
-
-/* Ajustement pour mobile */
-@media (max-width: 768px) {
-    .nav-btn {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin: 5px 0;
-    }
-}
-        /* ========== BOUTON DÉVELOPPEUR ========== */
-.developer-section {
-    text-align: center;
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 215, 0, 0.2);
-}
-
-.developer-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: linear-gradient(135deg, #25D366, #069c81);
-    color: rgb(255, 254, 254);
-    padding: 12px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
-}
-
-.developer-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
-    background: linear-gradient(135deg, #128C7E, #25D366);
-}
-
-.developer-btn i {
-    font-size: 1.3rem;
-    animation: pulse 2s infinite;
-}
-
-/* Animation pour l'icône WhatsApp */
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-        /* Couleurs spécifiques pour chaque bouton de contact */
-.modal-btn.gmail {
-    background: rgba(234, 67, 53, 0.2);
-    border-color: #EA4335;
-}
-
-.modal-btn.gmail:hover {
-    background: rgba(234, 67, 53, 0.4);
-}
-
-.modal-btn.yahoo {
-    background: rgba(96, 1, 210, 0.2);
-    border-color: #6001D2;
-}
-
-.modal-btn.yahoo:hover {
-    background: rgba(96, 1, 210, 0.4);
-}
-
-.modal-btn.facebook {
-    background: rgba(24, 119, 242, 0.2);
-    border-color: #1877F2;
-}
-
-.modal-btn.facebook:hover {
-    background: rgba(24, 119, 242, 0.4);
-}
-
-.modal-btn.whatsapp {
-    background: rgba(37, 211, 102, 0.2);
-    border-color: #25D366;
-}
-
-.modal-btn.whatsapp:hover {
-    background: rgba(37, 211, 102, 0.4);
-}
+    <style>
         /* ========== VARIABLES ========== */
         :root {
             --jaune-electrique: #FFD700;
@@ -289,7 +36,7 @@
             color: var(--texte-clair);
             background-color: var(--bg-principal);
             overflow-x: hidden;
-            background-image: linear-gradient(135deg, rgba(0,0,0,0.85), rgba(0,0,0,0.7)), url('accueil/WhatsApp Image 2026-03-05 at 19.10.35.jpeg');
+            background-image: linear-gradient(135deg, rgba(0,0,0,0.85), rgba(0,0,0,0.7)), url('accueil/WhatsApp%20Image%202026-03-05%20at%2019.10.35.jpeg');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -299,6 +46,22 @@
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
 
         .fade-in {
@@ -388,6 +151,62 @@
             cursor: pointer;
         }
 
+        /* ========== BOUTONS DE NAVIGATION ========== */
+        .nav-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: transparent;
+            color: var(--blanc) !important;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid var(--jaune-electrique);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .nav-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--jaune-electrique);
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+
+        .nav-btn:hover {
+            color: var(--bg-principal) !important;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(209, 189, 7, 0.4);
+        }
+
+        .nav-btn:hover::before {
+            left: 0;
+        }
+
+        .nav-btn::after {
+            display: none;
+        }
+
+        .nav-btn.active {
+            background: var(--jaune-electrique);
+            color: var(--bg-principal) !important;
+        }
+
+        @media (max-width: 768px) {
+            .nav-btn {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin: 5px 0;
+            }
+        }
+
         /* ========== MODAL DE CONTACT ========== */
         .modal {
             display: none;
@@ -408,11 +227,6 @@
             animation: fadeIn 0.3s ease;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
         .modal-content {
             background: rgba(20, 20, 20, 0.3);
             backdrop-filter: blur(20px);
@@ -426,11 +240,6 @@
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             animation: slideUp 0.3s ease;
-        }
-
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
         }
 
         .modal-content h3 {
@@ -474,6 +283,42 @@
             font-size: 1.3rem;
         }
 
+        .modal-btn.gmail {
+            background: rgba(234, 67, 53, 0.2);
+            border-color: #EA4335;
+        }
+
+        .modal-btn.gmail:hover {
+            background: rgba(234, 67, 53, 0.4);
+        }
+
+        .modal-btn.yahoo {
+            background: rgba(96, 1, 210, 0.2);
+            border-color: #6001D2;
+        }
+
+        .modal-btn.yahoo:hover {
+            background: rgba(96, 1, 210, 0.4);
+        }
+
+        .modal-btn.facebook {
+            background: rgba(24, 119, 242, 0.2);
+            border-color: #1877F2;
+        }
+
+        .modal-btn.facebook:hover {
+            background: rgba(24, 119, 242, 0.4);
+        }
+
+        .modal-btn.whatsapp {
+            background: rgba(37, 211, 102, 0.2);
+            border-color: #25D366;
+        }
+
+        .modal-btn.whatsapp:hover {
+            background: rgba(37, 211, 102, 0.4);
+        }
+
         .close-modal {
             margin-top: 1.5rem;
             background: none;
@@ -497,6 +342,262 @@
             border-radius: 10px;
             margin-top: 1rem;
         }
+
+        /* ========== CONTACT CONTAINER ========== */
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .contact-info {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-info h3 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+            max-width: 500px;
+            margin: 10px auto;
+            text-align: left;
+        }
+
+        .info-item i {
+            width: 30px;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        .info-item p {
+            margin: 0;
+            flex: 1;
+        }
+
+        /* ========== BOUTON DÉVELOPPEUR ========== */
+        .developer-section {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .developer-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #25D366, #069c81);
+            color: rgb(255, 254, 254);
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .developer-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+            background: linear-gradient(135deg, #128C7E, #25D366);
+        }
+
+        .developer-btn i {
+            font-size: 1.3rem;
+            animation: pulse 2s infinite;
+        }
+
+        /* ========== SECTION HERO ========== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 80px;
+        }
+
+        .hero-content {
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--jaune-electrique);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--blanc);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .nav-btn {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .nav-menu {
+                gap: 1rem;
+            }
+
+            .navbar {
+                padding: 1rem 2%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Volt<span>edge</span></div>
+        <ul class="nav-menu">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>VOLTEDGE SARL</h1>
+            <p>Solutions d'électricité professionnelle à Goma</p>
+            <a href="#contact" class="nav-btn">Nous Contacter</a>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <h3>Nous Contacter</h3>
+            <div class="modal-buttons">
+                <a href="mailto:contact@voltedge.com" class="modal-btn gmail">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://wa.me/243" class="modal-btn whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://facebook.com" class="modal-btn facebook" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+            </div>
+            <div class="contact-coordonnees">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Coordonnées</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Goma, République Démocratique du Congo</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+243 (exemple)</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@voltedge.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="close-modal" onclick="closeModal()">Fermer</button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('contactModal');
+        const contactBtn = document.querySelector('a[href="#contact"]');
+        
+        if (contactBtn) {
+            contactBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                openModal();
+            });
+        }
+
+        function openModal() {
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for fade-in effect
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
 
         .contact-coordonnees h4 {
             color: var(--jaune-electrique);
